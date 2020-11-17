@@ -40,6 +40,7 @@ def correct(paper, warped, CHOICE_PER_QUESTION, ANSWER_KEY):
                                           method="top-to-bottom")[0]
     correct = 0
     question = len(questionCnts)
+    print(question)
     # each question has 5 possible answers, to loop over the
     # question in batches of 5
     for (q, i) in enumerate(np.arange(0, len(questionCnts), CHOICE_PER_QUESTION)):
