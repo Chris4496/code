@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Home page{% endblock %}
+{% block content %}
+<div class="list-group">
+    {% for room in data %}
+    <a href="{{ room[0] }}" class="list-group-item list-group-item-action">{{ room }}</a>
+    {% endfor %}
+</div>
+<h1>Hello World</h1>
+{% endblock %}
